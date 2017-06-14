@@ -15,6 +15,7 @@
 		AE4AD8B41EF1204D00E03283 /* ic_autorenew_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4AD8B11EF1204D00E03283 /* ic_autorenew_2x.png */; };
 		AE4AD8B51EF1204D00E03283 /* ic_autorenew_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4AD8B21EF1204D00E03283 /* ic_autorenew_3x.png */; };
 		AE4AD8B61EF1204D00E03283 /* ic_autorenew.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4AD8B31EF1204D00E03283 /* ic_autorenew.png */; };
+		AE56967B1EF138FE00817447 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE56967A1EF138FE00817447 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AE4AD8B11EF1204D00E03283 /* ic_autorenew_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_autorenew_2x.png; path = ../../../../Desktop/ic_autorenew_2x.png; sourceTree = "<group>"; };
 		AE4AD8B21EF1204D00E03283 /* ic_autorenew_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_autorenew_3x.png; path = ../../../../Desktop/ic_autorenew_3x.png; sourceTree = "<group>"; };
 		AE4AD8B31EF1204D00E03283 /* ic_autorenew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_autorenew.png; path = ../../../../Desktop/ic_autorenew.png; sourceTree = "<group>"; };
+		AE56967A1EF138FE00817447 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				AE4AD89F1EF118FA00E03283 /* AppDelegate.swift */,
 				AE4AD8A11EF118FA00E03283 /* ViewController.swift */,
+				AE56967A1EF138FE00817447 /* SecondViewController.swift */,
 				AE4AD8A31EF118FA00E03283 /* Main.storyboard */,
 				AE4AD8B11EF1204D00E03283 /* ic_autorenew_2x.png */,
 				AE4AD8B21EF1204D00E03283 /* ic_autorenew_3x.png */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE56967B1EF138FE00817447 /* SecondViewController.swift in Sources */,
 				AE4AD8A21EF118FA00E03283 /* ViewController.swift in Sources */,
 				AE4AD8A01EF118FA00E03283 /* AppDelegate.swift in Sources */,
 			);
@@ -313,6 +317,7 @@
 				AE4AD8B01EF118FA00E03283 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
