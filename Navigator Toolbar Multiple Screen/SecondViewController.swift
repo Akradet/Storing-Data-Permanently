@@ -9,6 +9,49 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    //Explicit
+    let strArrayNumber = ["One","Two","Three","Four","Five",
+    "Six","Seven","Eight","Nine","Ten"]
+    var intIndex = 0
+    
+    @IBAction func secondNextbutton(_ sender: Any) {
+        
+        if intIndex <= strArrayNumber.count {
+            intIndex += 1
+        }
+        else {
+            intIndex = 0
+        
+        }
+        print("intIndex ==>\(intIndex)")
+        ShowLabel.text = strArrayNumber[intIndex]
+    }
+    
+    @IBAction func secondBackbutton(_ sender: Any) {
+        
+        if intIndex <= strArrayNumber.count{
+            intIndex -= 1
+        }
+        else{
+            intIndex = 0
+        }
+        
+        print("intIndex =>\(intIndex)")
+        ShowLabel.text = strArrayNumber[intIndex]
+        
+    }
+    
+    
+   
+    
+    
+    @IBOutlet weak var ShowLabel: UILabel!
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

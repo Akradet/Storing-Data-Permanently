@@ -27,12 +27,12 @@
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="First Screen" id="ju0-a1-17t">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="jjJ-mm-OzT">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="jjJ-mm-OzT">
                                             <connections>
                                                 <action selector="decreseNumber:" destination="BYZ-38-t0r" id="Uzr-8e-y9M"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="lte-6b-Da5">
+                                        <barButtonItem key="rightBarButtonItem" title="next" id="lte-6b-Da5">
                                             <connections>
                                                 <action selector="increaseNumber:" destination="BYZ-38-t0r" id="1aG-Hu-fOb"/>
                                             </connections>
@@ -98,18 +98,35 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Second Screen" id="JhM-VU-O6r">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="16k-OM-5f2"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="v3Z-Gl-Ypq"/>
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="16k-OM-5f2">
+                                            <connections>
+                                                <action selector="secondBackbutton:" destination="2WJ-wQ-LT9" id="EVw-UV-j2R"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="next" id="v3Z-Gl-Ypq">
+                                            <connections>
+                                                <action selector="secondNextbutton:" destination="2WJ-wQ-LT9" id="XUx-Hr-bTB"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daa-ZI-gBZ">
-                                <rect key="frame" x="116.66666666666669" y="182.66666666666663" width="181" height="371"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfu-5O-5I7">
+                                <rect key="frame" x="147" y="686" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7vm-K0-znu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daa-ZI-gBZ">
+                                <rect key="frame" x="56" y="162" width="302" height="413"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180.66999999999999" id="AyJ-Ph-845"/>
                                     <constraint firstAttribute="height" constant="371" id="pLp-SM-G62"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -120,6 +137,9 @@
                             <constraint firstItem="daa-ZI-gBZ" firstAttribute="centerY" secondItem="bah-2Q-sHP" secondAttribute="centerY" id="acl-fE-DdE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ShowLabel" destination="daa-ZI-gBZ" id="XUE-rT-cRF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUx-x6-XZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
